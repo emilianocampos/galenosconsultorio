@@ -1,445 +1,263 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="es">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Centro de Rehabilitación Galenos - Kinesiología, Quiropraxia y Ondas de Choque en Trelew. Recupera tu salud con profesionales expertos.">
+    <meta name="author" content="Galenos">
 
-        <title>Galenos - Centro de Rehabilitación
-        </title>
+    <title>Galenos - Centro de Rehabilitación Profesional</title>
 
-        <!-- CSS FILES -->        
-        <link rel="stylesheet" href="./css/anijs.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./imgs/4858411.png" type="image/x-icon">
+</head>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+<body id="top">
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <header class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#top">
+                <img src="./imgs/lgo.png" alt="Galenos Logo">
+            </a>
 
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
-
-        <link href="css/owl.theme.default.min.css" rel="stylesheet">
-
-        <link href="css/templatemo-medic-care.css" rel="stylesheet">
-        <link rel="shortcut icon" href="./imgs/4858411.png" type="image/x-icon">
-<!--
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
-    </head>
-    
-    <body id="top">
-    
-        <main>
-
-            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg ">
-                <div class="container">
-                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
-                        <img src="./imgs/lgo.png" alt="" style="width: 170px;">
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#hero" data-anijs="if: mouseover, do: bounce animated">Inicio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Obras sociales</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#timeline">Nuestro trabajo</a>
-                            </li>
-
-                            <a class="navbar-brand d-none d-lg-block bounce animated" href="index.html">
-                           <img src="./imgs/lgo.png" alt="" style="width: 170px;">
-                            </a>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#reviews">Nuestros pacientes</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#booking">Solicita tu turno</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Obras Sociales</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#reviews">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </nav>
 
-            <section class="hero" id="hero" >
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./imgs/ondas3.jpg" class="img-fluid b" alt="">
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <img src="./imgs/img2.jpg" class="img-fluid b" alt="" >
-                                    </div>
-                                    <div class="carousel-item">
-                                       
-                                        <img src="./imgs/img1.jpg" class="img-fluid b"alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="heroText d-flex flex-column justify-content-center">
-
-                                <h1 class="mt-auto mb-2 t" >
-                                   Mejora tu
-                                    <div class="animated-info">
-                                        <span class="animated-item">SALUD</span>
-                                        <span class="animated-item">DIA</span>
-                                        <span class="animated-item">VIDA</span>
-                                    </div>
-                                </h1>
-
-                                <p class="mb-2">Kinesiologia, Quiropraxia y Ondas de Choques.</p>
-
-                                <div class="heroLinks d-flex flex-wrap align-items-center">
-                                    <a class="custom-link me-4" href="#booking" >Solicita tu turno</a>
-<p class="plic">Lic. Ariel Campos -
-    Lic. Laura Campazzo</p>
-                                    <p class="contact-phone mb-0 cp"><i class="bi-phone"></i>2804664444 - 28044186640</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-padding" id="about" >
-                <div class="container">
-                    <div class="row" style="justify-content: center; text-align: center; gap: 20px;"  data-aos="fade-up">
-
-                        
-                            <h2 class="mb-lg-3 mb-3" >Obras sociales con las que trabajamos</h2>
-
-                          <img src="./imgs/logo-issys.png" alt="" class="img-fluid os">
-                          <img src="./imgs/osde_logo.png" alt=""class="img-fluid os">
-                          
-                     
-
-                       
-                        <img src="./imgs/PLACA-LOGO_SANCOR_SALUD.jpg" alt=""class="img-fluid os" style="height: 200px;">
-                        <img src="./imgs/sa.png" alt=""class="img-fluid os" style="height: 200px;">
-                      <p class='otras'>Entre otras...</p>
-
-                    </div>
-                </div>
-            </section>
-            <section class="section-padding pb-0" id="timeline">
-                <div class="container"  data-aos="fade-up">
-                    <div class="row">
-
-                        <h2 class="text-center mb-lg-5 mb-4" >Nuestro trabajo</h2>
-                        
-                        <div class="timeline">
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes"  data-aos="fade-up">
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">
-                                        ¿Qué es la Kinesiología?</h3>
-
-                                    <p>Los kinesiólogos evalúan el estado físico de los pacientes mediante una serie de pruebas y análisis de movimiento. Según los resultados, desarrollan programas personalizados que pueden incluir ejercicios terapéuticos, masajes, estiramientos, y técnicas de corrección postural. La kinesiología se utiliza tanto en la recuperación de lesiones como en la mejora del rendimiento deportivo, la rehabilitación postquirúrgica, y el manejo de enfermedades crónicas.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-patch-check-fill timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time></time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4"  data-aos="fade-up">
-                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">¿Qué es la Quiropraxia?</h3>
-
-                                    <p>
-                                       
-                                        La quiropraxia es una disciplina de la salud que se enfoca en diagnosticar, tratar y prevenir problemas del sistema musculoesquelético, especialmente de la columna vertebral. Su principio fundamental es que el buen funcionamiento del sistema nervioso, controlado por la columna, es esencial para la salud general del cuerpo. Los quiroprácticos utilizan técnicas manuales, como ajustes o manipulaciones, para corregir desalineaciones (subluxaciones) y mejorar la movilidad de las articulaciones.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-patch-check-fill timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time></time>
-                                </div>
-                            </div>
-
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes"  data-aos="fade-up">
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">¿Qué son las Ondas de Choque?</h3>
-
-                                    <p>Las ondas de choque son un tratamiento no invasivo que utiliza ondas acústicas de alta energía para tratar diversas afecciones musculoesqueléticas y tendinosas. Estas ondas se aplican en la zona afectada para estimular la regeneración de tejidos, mejorar el flujo sanguíneo y acelerar el proceso de curación. Son comúnmente usadas en fisioterapia y medicina deportiva para tratar problemas crónicos como tendinitis, fascitis plantar y calcificaciones.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-patch-check-fill timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time></time>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section class="gallery">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-6 ps-0" data-aos="flip-left">
-                            <img src="./imgs/ondassc.jpg"  class="img-fluid galleryImage vid" alt="get a vaccine" title="get a vaccine for yourself" >
-                        </div>
-
-                        <div class="col-lg-6 col-6 pe-0" data-aos="flip-left">
-                            <video controls width="600" height="600px" class="img-fluid vid">
-                                <source src="./imgs/ondasc.mp4" type="video/mp4">
-                                Tu navegador no soporta la etiqueta de video.
-                            </video>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            
-
-            <section class="section-padding pb-0" id="reviews">
-                <div class="container "  data-aos="fade-up">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Nuestros pacientes</h2>
-
-                            <div class="owl-carousel reviews-carousel">
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-
-
-                                    <p class="reviews-text w-100">"Las ondas de choque aliviaron mi fascitis plantar en pocas sesiones. Muy recomendable."</p>
-
-                                    <img src="images/reviews/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Romina Caceres</strong>
-
-                                    
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                   
-
-                                    <p class="reviews-text w-100">"Me ayudó a recuperar la movilidad de mi rodilla tras una lesión. Su atención fue excelente."</p>
-
-                                    <img src="images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>David Loscar</strong>
-
-                                     
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                 
-
-                                    <p class="reviews-text w-100">"Gracias a su tratamiento, mi dolor de espalda ha mejorado notablemente. Me enseñaron ejercicios para prevenir futuras molestias."</p>
-
-                                    <img src="images/reviews/portrait-british-woman.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Laura Zono</strong>
-
-                              
-                                    </figcaption>
-                                </figure>
-
-                           
-                               
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-padding" id="booking">
-                <div class="container">
-                    <div class="row">
-                    
-                        <div class="col-lg-8 col-12 mx-auto"  data-aos="fade-up">
-                            <div class="booking-form">
-                                
-                                <h2 class="text-center mb-lg-3 mb-2">Turnos y consultas</h2>
-                            
-                                <form role="form" action="#booking" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Telefono">
-                                        </div>
-
-                                     
-
-                                        <div class="col-12">
-                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Mensaje..."></textarea>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control" id="submit-button">Enviar</button>
-                                        </div>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="site-footer section-padding" id="contact">
+            <a href="https://wa.me/542804664444" class="btn btn-primary d-none d-md-flex">Pedir Turno</a>
+
+            <button class="mobile-toggle">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-accent"></div>
             <div class="container">
-                <div class="row">
+                <div class="hero-content">
+                    <span class="hero-tag">Rehabilitación de Elite</span>
+                    <h1>Recupera tu <br><span class="text-rotate">SALUD</span></h1>
+                    <p>Kinesiología, Quiropraxia y Ondas de Choque con un enfoque integral y personalizado en el corazón
+                        de Trelew.</p>
 
-                    <div class="col-lg-5 me-auto col-12" data-aos="fade-up"
-                    data-aos-duration="3000">
-                        <h5 class="mb-lg-4 mb-3">Horarios</h5>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex">
-                                Lunes - Viernes
-                                <span>10:00 AM - 21:00 PM</span>
-                            </li>
-                            <li class="list-group-item d-flex">
-                                Sabados : Cerrado
-                            </li>
-
-
-                         
-                        </ul>
+                    <div class="cta-group">
+                        <a href="https://wa.me/542804664444" class="btn btn-primary">Solicitar Turno Ahora</a>
+                        <a href="#services" class="btn btn-outline">Nuestras Especialidades</a>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0" data-aos="fade-up"
-                    data-aos-duration="3000">
-                        <h5 class="mb-lg-4 mb-3">Nuestro consultorio</h5>
-
-                        <p><a href="mailto:hello@company.co">emilauar@hotmail.com</a><p>
-
-                        <p>Remedios de escalada 608 - Trelew - Chubut - Argentina</p>
+                    <div class="hero-specialists">
+                        <div class="spec-info">
+                            <span class="spec-label">Profesionales a cargo:</span>
+                            <span class="spec-names">Lic. Ariel Campos — Lic. Laura Campazzo</span>
+                        </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 ms-auto" data-aos="fade-up"
-                    data-aos-duration="3000">
-                        <h5 class="mb-lg-4 mb-3">Redes sociales</h5>
-
-                        <ul class="social-icon">
-                            <li><a href="https://www.facebook.com/ondasdechoquetw" class="social-icon-link bi-facebook"></a></li>
-
-                           
-
-                            <li><a href="https://www.instagram.com/galenostw/" class="social-icon-link bi-instagram"></a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0" data-aos="fade-up"
-                    data-aos-duration="3000"> 
-                        <p class="copyright-text">Copyright © Galenos 2024   
-                      </p>
-                      <p>Diseño web: emicampos1268@gmail.com</p>
-                    </div>
-
                 </div>
-            </section>
-        </footer>
-    
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="anijs-min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
-        <script>
-            AOS.init();
-          </script>
-<!--
+            </div>
 
-TemplateMo 566 Medic Care
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <img src="./imgs/ondas3.jpg" alt="Tratamiento Kinesiología" id="hero-img">
+                </div>
+                <div class="hero-floating-card">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>+10 años de experiencia</span>
+                </div>
+            </div>
+        </section>
 
-https://templatemo.com/tm-566-medic-care
+        <!-- Obras Sociales -->
+        <section class="section-padding" id="about" style="background: white;">
+            <div class="container" style="text-align: center;">
+                <h2 style="margin-bottom: 3rem;">Obras Sociales Asociadas</h2>
+                <div class="logos-container">
+                    <div class="logo-item"><img src="./imgs/logo-issys.png" alt="ISSYS"></div>
+                    <div class="logo-item"><img src="./imgs/osde_logo.png" alt="OSDE"></div>
+                    <div class="logo-item"><img src="./imgs/PLACA-LOGO_SANCOR_SALUD.jpg" alt="Sancor Salud"></div>
+                    <div class="logo-item"><img src="./imgs/sa.png" alt="Seguros"></div>
+                </div>
+                <p style="margin-top: 2rem; color: var(--text-muted);">Entre muchas otras...</p>
+            </div>
+        </section>
 
--->
-    </body>
+        <!-- Services Section -->
+        <section class="section-padding" id="services">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                    <h2>Nuestros Servicios de Excelencia</h2>
+                    <p>Aplicamos técnicas de vanguardia y equipamiento de última generación para garantizar una
+                        recuperación efectiva y duradera.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="bi bi-person-walking"></i></div>
+                        <h3>Kinesiología</h3>
+                        <p>Evaluación y tratamiento personalizado de lesiones musculoesqueléticas, rehabilitación
+                            neurológica y deportiva.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="bi bi-activity"></i></div>
+                        <h3>Quiropraxia</h3>
+                        <p>Ajustes manuales precisos para corregir desalineaciones vertebrales y optimizar el
+                            funcionamiento del sistema nervioso.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+                        <h3>Ondas de Choque</h3>
+                        <p>Tratamiento no invasivo de alta energía para afecciones crónicas como tendinitis, fascitis
+                            plantar y calcificaciones.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section-padding" id="reviews" style="background: var(--bg-card);">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 4rem;">La Experiencia de Nuestros Pacientes</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div
+                        style="background: #fff; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                        <div style="color: #fbbf24; margin-bottom: 1rem;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem;">"Las ondas de choque aliviaron mi fascitis
+                            plantar en pocas sesiones. Muy recomendable."</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="images/reviews/beautiful-woman-face-portrait-brown-background.jpeg"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <strong>Romina Caceres</strong>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: #fff; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                        <div style="color: #fbbf24; margin-bottom: 1rem;">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem;">"Me ayudó a recuperar la movilidad de mi
+                            rodilla tras una lesión. Su atención fue excelente."</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg"
+                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <strong>David Loscar</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking & Contact -->
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">¿Listo para sentirte mejor?</h2>
+                        <p style="margin-bottom: 2.5rem;">Contáctanos para programar tu primera consulta o resolver tus
+                            dudas. Estamos aquí para ayudarte en tu camino a la recuperación.</p>
+
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="color: var(--primary); font-size: 1.5rem;"><i class="bi bi-geo-alt"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Nuestra Ubicación</h4>
+                                <p>Remedios de escalada 608 - Trelew - Chubut - Argentina</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="color: var(--primary); font-size: 1.5rem;"><i class="bi bi-clock"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Horarios</h4>
+                                <p>Lunes a Viernes: 10:00 - 21:00<br>Sábados: Cerrado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                        <h3 style="margin-bottom: 2rem;">Enviar un Mensaje</h3>
+                        <form action="#" id="booking-form">
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="text" placeholder="Nombre completo" required
+                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <input type="tel" placeholder="Teléfono" required
+                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);">
+                            </div>
+                            <div style="margin-bottom: 2rem;">
+                                <textarea placeholder="¿En qué podemos ayudarte?" rows="4"
+                                    style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+                <div>
+                    <img src="./imgs/lgo.png" alt="Galenos"
+                        style="height: 40px; margin-bottom: 2rem; filter: brightness(0) invert(1);">
+                    <p>Rehabilitación profesional y cuidado integral para tu salud física en el corazón de Trelew.</p>
+                </div>
+                <div>
+                    <h5>Navegación</h5>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#reviews">Pacientes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Síguenos</h5>
+                    <div style="display: flex; gap: 1.5rem; font-size: 1.5rem;">
+                        <a href="https://www.facebook.com/ondasdechoquetw"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/galenostw/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright © Galenos 2024 | Diseño Profesional</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/542804664444" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
 </html>
