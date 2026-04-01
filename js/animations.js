@@ -87,7 +87,7 @@ function rotateText() {
 setInterval(rotateText, 3000);
 
 // Section Reveals
-const sections = ['#about', '#services', '#reviews', '#contact'];
+const sections = ['#about', '#services', '#installations', '#reviews', '#contact'];
 
 sections.forEach(section => {
     gsap.from(`${section} h2`, {
@@ -102,18 +102,19 @@ sections.forEach(section => {
     });
 });
 
-// Service Cards Stagger
-gsap.from('.service-card', {
-    scrollTrigger: {
-        trigger: '.services-grid',
-        start: "top 80%",
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power3.out"
-});
+// Service Cards Stagger 
+// (Commented out temporarily to ensure visibility)
+// gsap.from('.service-card', {
+//     scrollTrigger: {
+//         trigger: '.services-grid',
+//         start: "top 80%",
+//     },
+//     y: 50,
+//     opacity: 0,
+//     duration: 0.8,
+//     stagger: 0.2,
+//     ease: "power3.out"
+// });
 
 // Obras Sociales Stagger
 gsap.from('.logo-item', {
@@ -136,6 +137,67 @@ gsap.from('.whatsapp-float', {
     duration: 1,
     ease: "elastic.out(1, 0.3)"
 });
+
+// Installations Carousel Animation
+// (Commented out to ensure images are always visible immediately)
+// gsap.from('.custom-carousel-slide', {
+//     scrollTrigger: {
+//         trigger: '#installations',
+//         start: "top 80%",
+//     },
+//     x: 100,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 0.1,
+//     ease: "power3.out"
+// });
+
+// Custom Carousel Logic
+const track = document.getElementById('custom-carousel-track');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (track && prevBtn && nextBtn) {
+    const scrollAmount = 300; // Configurable scroll step
+
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    // Optional drag to scroll
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+        isDown = true;
+        track.style.cursor = 'grabbing';
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+    });
+
+    track.addEventListener('mouseleave', () => {
+        isDown = false;
+        track.style.cursor = 'grab';
+    });
+
+    track.addEventListener('mouseup', () => {
+        isDown = false;
+        track.style.cursor = 'grab';
+    });
+
+    track.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        const walk = (x - startX) * 2;
+        track.scrollLeft = scrollLeft - walk;
+    });
+}
 
 // Mobile Menu Logic
 const menuBtn = document.querySelector('.mobile-toggle');

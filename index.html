@@ -29,6 +29,7 @@
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#about">Obras Sociales</a></li>
                     <li><a href="#services">Servicios</a></li>
+                    <li><a href="#installations">Instalaciones</a></li>
                     <li><a href="#reviews">Testimonios</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
@@ -69,11 +70,11 @@
 
             <div class="hero-visual">
                 <div class="image-wrapper">
-                    <img src="./imgs/ondas3.jpg" alt="Tratamiento Kinesiología" id="hero-img">
+                    <img src="./imgs/img1.jpg" alt="Tratamiento Kinesiología" id="hero-img">
                 </div>
                 <div class="hero-floating-card">
                     <i class="bi bi-check-circle-fill"></i>
-                    <span>+10 años de experiencia</span>
+                    <span>+20 años de experiencia</span>
                 </div>
             </div>
         </section>
@@ -110,19 +111,49 @@
                     </article>
 
                     <article class="service-card">
-                        <div class="service-icon"><i class="bi bi-activity"></i></div>
-                        <h3>Quiropraxia</h3>
-                        <p>Ajustes manuales precisos para corregir desalineaciones vertebrales y optimizar el
-                            funcionamiento del sistema nervioso.</p>
+                        <div class="service-icon"><i class="bi bi-heart-pulse"></i></div>
+                        <h3>Fisioterapia</h3>
+                        <p>Tratamientos físicos personalizados orientados a restaurar la movilidad, aliviar el
+                            dolor y mejorar tu calidad de vida.</p>
                     </article>
 
                     <article class="service-card">
                         <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
                         <h3>Ondas de Choque</h3>
-                        <p>Tratamiento no invasivo de alta energía para afecciones crónicas como tendinitis, fascitis
-                            plantar y calcificaciones.</p>
+                        <p>Tratamiento no invasivo de alta energía para afecciones crónicas como tendinitis,
+                            fascitis plantar y calcificaciones.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- Installations Section -->
+        <section class="section-padding" id="installations">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                    <h2>Nuestras Instalaciones</h2>
+                    <p>Contamos con un espacio moderno, cómodo y equipado con tecnología de punta para brindar la mejor
+                        atención.</p>
+                </div>
+            </div>
+
+            <div class="custom-carousel-wrapper">
+                <button class="custom-carousel-btn prev" aria-label="Anterior" id="prevBtn"><i
+                        class="bi bi-chevron-left"></i></button>
+                <div class="custom-carousel-track" id="custom-carousel-track">
+                    <div class="custom-carousel-slide"><img src="./imgs/f1.jpg" alt="Instalaciones 1"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f2.jpg" alt="Instalaciones 2"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f3.jpg" alt="Instalaciones 3"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f4.jpg" alt="Instalaciones 4"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f5.jpg" alt="Instalaciones 5"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f6.jpg" alt="Instalaciones 6"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/f7.jpg" alt="Instalaciones 7"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/img1.jpg" alt="Instalaciones 8"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/img2.jpg" alt="Instalaciones 9"></div>
+                    <div class="custom-carousel-slide"><img src="./imgs/img3.jpg" alt="Instalaciones 10"></div>
+                </div>
+                <button class="custom-carousel-btn next" aria-label="Siguiente" id="nextBtn"><i
+                        class="bi bi-chevron-right"></i></button>
             </div>
         </section>
 
@@ -196,17 +227,20 @@
                     <div
                         style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
                         <h3 style="margin-bottom: 2rem;">Enviar un Mensaje</h3>
-                        <form action="#" id="booking-form">
+                        <form action="https://formspree.io/f/maqljvjv" method="POST" id="booking-form">
+                            <!-- Formspree Configuration -->
+                            <input type="hidden" name="_subject" value="Nueva consulta: Galenos Consultorio">
+
                             <div style="margin-bottom: 1.5rem;">
-                                <input type="text" placeholder="Nombre completo" required
+                                <input type="text" name="name" placeholder="Nombre completo" required
                                     style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);">
                             </div>
                             <div style="margin-bottom: 1.5rem;">
-                                <input type="tel" placeholder="Teléfono" required
+                                <input type="tel" name="phone" placeholder="Teléfono" required
                                     style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);">
                             </div>
                             <div style="margin-bottom: 2rem;">
-                                <textarea placeholder="¿En qué podemos ayudarte?" rows="4"
+                                <textarea name="message" placeholder="¿En qué podemos ayudarte?" rows="4" required
                                     style="width: 100%; padding: 1rem; border: 1px solid #e2e8f0; border-radius: var(--radius-md);"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta</button>
@@ -243,7 +277,7 @@
                 </div>
             </div>
             <div class="bottom-footer">
-                <p>Copyright © Galenos 2024 | Diseño Profesional</p>
+                <p>Copyright © Galenos 2024 | Diseño Profesional EMILIANO CAMPOS</p>
             </div>
         </div>
     </footer>
